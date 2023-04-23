@@ -26,46 +26,14 @@ const UserSchema = new Schema(
       type: String,
       default: "",
     },
-    cover: {
-      type: String,
-      default: "",
+   
+    score: {
+      type: Number,
+      default: 0,
     },
-    gender: {
-      type: String,
-      default: "",
-    },
-    role: {
-      type: String,
-      default: "student",
-    },
-    bio: {
-      type: String,
-      default: "",
-    },
-    location: {
-      type: String,
-      default: "",
-    },
-    askedQuestions: {
-      type: Array,
-      default: [],
-    },
-    solvedProblems: {
-      type: Array,
-      default: [],
-    },
-    topics: {
-      type: Array,
-      default: [],
-    },
-    phone: {
-      type: String,
-      default: "",
-    },
-    collage: {
-      type: String,
-      default: "",
-    },
+   
+ 
+   
   },
   { timestamps: true }
 );

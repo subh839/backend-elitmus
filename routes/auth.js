@@ -54,7 +54,7 @@ router.post("/login", async (req, res) => {
     res.json({
       others,
       accessToken,
-      refreshToken,
+      refreshToken
     });
   } catch (err) {
     res.status(500).json(err);

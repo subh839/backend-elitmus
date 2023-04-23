@@ -69,6 +69,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.patch("/:id", async(req, res) => {
+  try{
+    const { score } = req.body;
+    const updatedUser = await User.findOneAndUpdate(req.params.id, { $set: {score} }, { new: true });
+    res.status(200).json(updatedUser);
+  } catch(err) {
+    res.status(500).json(err);
+  }
+})
+
+
+
 
 
 export default router;
